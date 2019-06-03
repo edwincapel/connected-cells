@@ -2,6 +2,7 @@
   "name": "connected-cells-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://edwincapel.github.io/connected-cells",
   "dependencies": {
     "@types/jest": "24.0.13",
     "@types/node": "12.0.4",
@@ -17,6 +18,8 @@
     "typescript": "3.5.1"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

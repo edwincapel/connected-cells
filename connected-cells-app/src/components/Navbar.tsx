@@ -14,7 +14,7 @@ export default function Navbar(){
 
   return (
     <BootstrapNavbar color="light" light expand="md">
-      <NavbarBrand href="/">Connected Cells</NavbarBrand>
+      <NavbarBrand href="https://edwincapel.github.io/connected-cells/">Connected Cells</NavbarBrand>
       <NavbarToggler onClick={() => setCollapsed(!collapsed)} />
       <Collapse isOpen={collapsed} navbar>
         <Nav className="ml-auto" navbar>
