@@ -147,7 +147,7 @@ export default class Matrix {
     })
   }
 
-  throwErrorMessage(row: number, length: number):void{
+  throwErrorMessage(row: number, length: number): void{
     throw new Error(`Row ${row} is not valid. Expected ${this.columns}, Actual: ${length}`)
   }
 }

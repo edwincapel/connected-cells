@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import {
   Collapse,
   Navbar as BootstrapNavbar,
@@ -7,7 +7,7 @@ import {
   Nav,
   NavItem,
   NavLink
-} from 'reactstrap';
+} from 'reactstrap'
 
 export default function Navbar(){
   const [collapsed, setCollapsed] = useState(false)
