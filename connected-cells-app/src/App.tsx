@@ -6,13 +6,19 @@ import { Alert, Container, Row, Col, Form, FormGroup, Label, Input, Button} from
 import Table from "./components/Table"
 import DEFAULT_MATRIX from './utils/DefaultMatrix'
 import RANDOM_MATRIX from './utils/RandomMatrix'
+import InfoModal from './components/InfoModel'
 
 const App: React.FC = () => {
   const [rows, setRows] = useState(5)
   const [cols, setCols] = useState(5)
   const [matrix, setMatrix] = useState(DEFAULT_MATRIX(rows,cols))
+  const [modal, setModal] = useState(false)
   
   let answer: JSX.Element | null = null
+
+  const handleModal = () => {
+    setModal(!modal)
+  }
 
   const handleReset = () => {
     let randomRows = Math.floor(Math.random() * 10) + 1
@@ -20,11 +26,8 @@ const App: React.FC = () => {
     
     setCols(randomCols)
     setRows(randomRows)
-    const mat = RANDOM_MATRIX(randomRows, randomCols)
-    console.log(mat)
-    setMatrix(mat)
+    setMatrix(RANDOM_MATRIX(randomRows, randomCols))
   }
-
 
   try {
     const connectedCells = new ConnectedCells(rows, cols, matrix)
@@ -112,11 +115,19 @@ const App: React.FC = () => {
                     </Alert>
                   </div>
               }
-              <Button
-                onClick={handleReset}
-              >
-                Randomize
-              </Button>
+              <div className="d-flex justify-content-between">
+                <Button
+                  onClick={handleReset}
+                >
+                  Randomize
+                </Button>
+                <Button 
+                  color="info" 
+                  onClick={() => {handleModal()}}
+                >
+                  App Info
+                </Button>
+              </div>
             </Form>
           </Col>
           <Col md="6" className="border-left p-0 mb-2">
@@ -124,8 +135,9 @@ const App: React.FC = () => {
           </Col>
         </Row>
       </Container>
+      <InfoModal modal={modal} toggleFunc={handleModal} />
     </>
-  );
+  )
 }
 
-export default App;
+export default App
