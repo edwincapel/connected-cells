@@ -1,5 +1,36 @@
 # connected-cells
+
 A Typescript exercise in search algorithm
+
+## Demo [here](https://edwincapel.github.io/connected-cells/)
+
+## Install
+
+To run react app, change directory to react app location
+
+```sh
+cd connected-cells-app/
+```
+
+Install dependencies
+
+```sh
+yarn install
+```
+
+## Run App
+
+```sh
+yarn start
+```
+
+## Test
+
+To run test
+
+```sh
+yarn run test src/Matrix.test.ts
+```
 
 **Note: PLEASE FORK THIS REPOSITORY** 
 
