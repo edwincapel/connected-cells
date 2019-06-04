@@ -2,11 +2,21 @@ import React,{ useState } from 'react'
 import './App.css'
 import Navbar from "./components/Navbar"
 import ConnectedCells from "./Matrix"
-import { Alert, Container, Row, Col, Form, FormGroup, Label, Input, Button} from "reactstrap"
 import Table from "./components/Table"
 import DEFAULT_MATRIX from './utils/DefaultMatrix'
 import RANDOM_MATRIX from './utils/RandomMatrix'
-import InfoModal from './components/InfoModel'
+import InfoModal from './components/InfoModal'
+import { 
+  Alert, 
+  Container, 
+  Row, 
+  Col, 
+  Form, 
+  FormGroup, 
+  Label, 
+  Input, 
+  Button
+} from "reactstrap"
 
 const App: React.FC = () => {
   const [rows, setRows] = useState(5)
@@ -51,9 +61,10 @@ const App: React.FC = () => {
           <Row className="border border-dark p-2">
             <Col md="10">
               Steps:
-              <br/>
-              1) Insert Row and Column, that will generate a default matrix of 0's <br/><br/>
-              2) Insert Custom Matrix or Edit Default Matrix
+              <ol>
+                <li>Insert Row and Column, that will generate a default matrix of <code>0</code>'s</li>
+                <li>Insert Custom Matrix or Edit Default Matrix</li>
+              </ol>
             </Col>
           </Row>
         </Container>
@@ -123,7 +134,7 @@ const App: React.FC = () => {
                 </Button>
                 <Button 
                   color="info" 
-                  onClick={() => {handleModal()}}
+                  onClick={handleModal}
                 >
                   App Info
                 </Button>

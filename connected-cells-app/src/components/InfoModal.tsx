@@ -6,14 +6,14 @@ import {
   ModalHeader, 
   ModalBody,
   ModalFooter 
-  } from 'reactstrap'
+} from 'reactstrap'
 
 interface Props {
   modal: boolean,
   toggleFunc: any
 }
 
-const InfoModel: React.FC<Props> = (props) => {
+const InfoModal: React.FC<Props> = (props) => {
   return(
     <>
       <Modal isOpen={props.modal} toggle={props.toggleFunc}>
@@ -31,12 +31,13 @@ const InfoModel: React.FC<Props> = (props) => {
           </li>
           <li>Rows and Columns are always numbers</li>
           <li>Matrix has no starting or trailing spaces</li>
-          <li className="text-danger">This Matrix UI works best when number of Col is less than or equals 12</li>
+          <li className="text-danger">Desktop : This Matrix UI works best when number of Col is less than or equals <code>12</code></li>
+          <li className="text-danger">Mobile : This Matrix UI works best when number of Col is less than or equals <code>8</code></li>
         </ul>
 
         Steps:
         <ol>
-          <li>Insert Row and Column, that will generate a default matrix of 0's</li>
+          <li>Insert Row and Column, that will generate a default matrix of <code>0</code>'s</li>
           <li>Insert Custom Matrix or Edit Default Matrix</li>
         </ol>
         </ModalBody>
@@ -48,4 +49,4 @@ const InfoModel: React.FC<Props> = (props) => {
   )
 }
 
-export default InfoModel
+export default InfoModal
