@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/connected-cells/static/css/main.a03d9e24.chunk.css",
-    "main.js": "/connected-cells/static/js/main.ad144e62.chunk.js",
-    "main.js.map": "/connected-cells/static/js/main.ad144e62.chunk.js.map",
-    "runtime~main.js": "/connected-cells/static/js/runtime~main.853d1b7a.js",
-    "runtime~main.js.map": "/connected-cells/static/js/runtime~main.853d1b7a.js.map",
-    "static/css/2.266e55a5.chunk.css": "/connected-cells/static/css/2.266e55a5.chunk.css",
-    "static/js/2.8907ca7d.chunk.js": "/connected-cells/static/js/2.8907ca7d.chunk.js",
-    "static/js/2.8907ca7d.chunk.js.map": "/connected-cells/static/js/2.8907ca7d.chunk.js.map",
-    "index.html": "/connected-cells/index.html",
-    "precache-manifest.8cba43664e5f0db44a7d94f1b4676be0.js": "/connected-cells/precache-manifest.8cba43664e5f0db44a7d94f1b4676be0.js",
-    "service-worker.js": "/connected-cells/service-worker.js",
-    "static/css/2.266e55a5.chunk.css.map": "/connected-cells/static/css/2.266e55a5.chunk.css.map",
-    "static/css/main.a03d9e24.chunk.css.map": "/connected-cells/static/css/main.a03d9e24.chunk.css.map"
+    "main.css": "/edwincapel.com/static/css/main.a03d9e24.chunk.css",
+    "main.js": "/edwincapel.com/static/js/main.df8be675.chunk.js",
+    "main.js.map": "/edwincapel.com/static/js/main.df8be675.chunk.js.map",
+    "runtime~main.js": "/edwincapel.com/static/js/runtime~main.6f10fc15.js",
+    "runtime~main.js.map": "/edwincapel.com/static/js/runtime~main.6f10fc15.js.map",
+    "static/css/2.266e55a5.chunk.css": "/edwincapel.com/static/css/2.266e55a5.chunk.css",
+    "static/js/2.8907ca7d.chunk.js": "/edwincapel.com/static/js/2.8907ca7d.chunk.js",
+    "static/js/2.8907ca7d.chunk.js.map": "/edwincapel.com/static/js/2.8907ca7d.chunk.js.map",
+    "index.html": "/edwincapel.com/index.html",
+    "precache-manifest.808fdf1d4eacbf47e3bcc8438f13a48a.js": "/edwincapel.com/precache-manifest.808fdf1d4eacbf47e3bcc8438f13a48a.js",
+    "service-worker.js": "/edwincapel.com/service-worker.js",
+    "static/css/2.266e55a5.chunk.css.map": "/edwincapel.com/static/css/2.266e55a5.chunk.css.map",
+    "static/css/main.a03d9e24.chunk.css.map": "/edwincapel.com/static/css/main.a03d9e24.chunk.css.map"
   }
 }
